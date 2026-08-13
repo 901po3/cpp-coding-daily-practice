@@ -8,10 +8,7 @@ vector<int> solution(vector<int> arr, vector<int> query) {
     {
         if (i % 2 == 0)
         {
-            if (query[i] + 1 <= arr.size())
-            {
-                arr.erase(arr.begin() + query[i] + 1, arr.begin() + arr.size());
-            }
+            arr.erase(arr.begin() + query[i] + 1, arr.begin() + arr.size());
         }
         else
         {
